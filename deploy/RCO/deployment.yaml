@@ -1,0 +1,14 @@
+apiVersion: rc.app.stacks/v1
+kind: RuntimeComponent
+metadata:
+  name: modresortsx2
+spec:
+  applicationImage: default-route-openshift-image-registry.apps.tasvt.cp.fyre.ibm.com/wtmod/mod:latest
+  route:
+    termination: edge
+    insecureEdgeTerminationPolicy: Redirect
+  service:
+    type: ClusterIP
+    port: 9080
+  expose: true
+  replicas: 1
