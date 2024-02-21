@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc 
   project: default 
   source: 
-    path: john/mod
+    path: deploy/RCO
     repoURL: https://github.com/barnsie007/modResorts.git
     targetRevision: main
   syncPolicy: 
