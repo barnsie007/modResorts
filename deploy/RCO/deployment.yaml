@@ -5,10 +5,10 @@ metadata:
 spec:
   applicationImage: default-route-openshift-image-registry.apps.tasvt.cp.fyre.ibm.com/wtmod/mod:latest
   route:
-    termination: doesthiswork
+    termination: edge
     insecureEdgeTerminationPolicy: Redirect
   service:
     type: ClusterIP
     port: 9080
   expose: true
-  replicas: 1
+  replicas: 2
