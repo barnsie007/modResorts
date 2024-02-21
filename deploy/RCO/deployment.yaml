@@ -5,7 +5,7 @@ metadata:
 spec:
   applicationImage: default-route-openshift-image-registry.apps.tasvt.cp.fyre.ibm.com/wtmod/mod:latest
   route:
-    termination: john
+    termination: edge
     insecureEdgeTerminationPolicy: Redirect
   service:
     type: ClusterIP
